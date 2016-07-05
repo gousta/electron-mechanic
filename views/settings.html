@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Settings</title>
+	
+	<!-- Vendor CSS -->
+	<link href="vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
+	<link href="vendors/bower_components/sweetalert/dist/sweetalert.css" rel="stylesheet">
+	<link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+	<link href="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+	<link href="vendors/bootgrid/jquery.bootgrid.min.css" rel="stylesheet">
+
+	<!-- CSS -->
+    <link href="css/app_1.css" rel="stylesheet">
+    <link href="css/app_2.css" rel="stylesheet">
+</head>
+<body>
+	<header id="header" class="clearfix" data-ma-theme="blue">
+		<ul class="h-inner">
+			<li>
+				<ul class="hi-menu">
+					<li>
+						<a href="main.html"><i class="him-icon zmdi zmdi-arrow-left"></i></a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="pull-right">
+				<ul class="hi-menu">
+					<li>
+						<a href="settings.html"><i class="him-icon zmdi zmdi-settings"></i></a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</header>
+
+	<section id="main">
+		<section id="content">
+			<div class="container">
+
+				<h1>Hello World!</h1>
+
+				<!-- All of the Node.js APIs are available in this renderer process. -->
+				We are using node <script>document.write(process.versions.node)</script>,
+				Chromium <script>document.write(process.versions.chrome)</script>,
+				and Electron <script>document.write(process.versions.electron)</script>.
+
+				<h1>Notifications Sample</h1>
+				<p>This sample demonstrates the use of the Notifications API. Use buttons below to create various different notifications.</p>
+				<div class="sample">
+					<button class="btn btn-primary" id="basic">Basic Notification</button>
+					<span>Basic notification: default icon, title, and message. </span>
+				</div>
+				<div class="sample">
+					<button id="image">Image Notification</button>
+					<span>Image notification: icon, title, image, and message.(Only available on OS X Yosemite)</span>
+				</div>
+				<script type="text/javascript"> 
+					var fs = require('fs');
+					var file = fs.readFileSync('./package.json'); 
+					document.write(file);
+				</script>
+
+
+				<script src="../window.js"></script>
+
+			</div>
+		</section>
+	</section>
+</body>
+</html>
